@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Azizul - Personal Website</title>
+    <style>
+         { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; padding: 20px; }
+        .container { display: flex; align-items: center; background: white; padding: 40px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); width: 90%; max-width: 1000px; }
+        .profile-photo { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; margin-right: 30px; border: 4px solid #ddd; }
+        .content { flex: 1; }
+        h1 { color: #333; font-size: 32px; margin-bottom: 5px; }
+        p { font-size: 18px; color: #555; margin-bottom: 15px; }
+        .about h2 { font-size: 22px; color: #222; margin-bottom: 10px; }
+        a { display: inline-block; color: blue; text-decoration: none; font-size: 16px; margin-right: 10px; font-weight: bold; }
+        .fun-btn { padding: 10px 18px; font-size: 16px; background: blue; color: white; border: none; border-radius: 5px; cursor: pointer; margin-top: 15px; }
+        .fun-btn:hover { background: darkblue; }
+        #fact { font-size: 16px; color: #222; margin-top: 10px; font-style: italic; }
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Profile Image on the Left -->
+        <img src="C:\Users\KIIT\Desktop\azizulll.jpg" alt="Md Azizul" class="profile-photo">
+
+        <!-- Content on the Right -->
+        <div class="content">
+            <h1>Md Azizul</h1>
+            <p><strong>Computer Science Student</strong></p>
+            
+            <div class="about">
+                <h2>About Me</h2>
+                <p>Hello! I'm Md Azizul, a passionate <strong>Computer Science Student</strong>.  
+                I love working with programming languages like *C, C++, Python some more* and always exploring new ideas.  
+                My goal is to create impactful solutions that make life better.</p>
+            </div>
+
+            <h2>Connect with Me</h2>
+            <a href="https://www.facebook.com/share/1CNnhRnjZu/ " target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/.azizul._" target="_blank">Instagram</a>
+        <a href="https://github.com/Azizul2026" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/azizul-khan-793540350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+        <a href="mail To:azizulkhan5211@gmail.com">Email</a>
+
+
+            <button class="fun-btn" onclick="showFact()">Click for a Fun Fact</button>
+            <p id="fact"></p>
+        </div>
+    </div>
+
+    <script>
+        function showFact() {
+            const facts = [
+                "Technology is evolving every day, and I love being part of it!",
+                "Coding is like solving a puzzle – always exciting!",
+                "Learning new things keeps me inspired!",
+                "Creativity + Technology = Endless Possibilities!"
+            ];
+            document.getElementById("fact").innerText = facts[Math.floor(Math.random() * facts.length)];
+        }
+    </script>
+
+</body>
+</html>
